@@ -1,0 +1,24 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: #447843;
+    --gold: #E6C234;
+    --gray: #B0B2B2;
+}
+
+header {
+    height: 75px;
+    background-color: var(--green);
+    border-bottom: var(--gold) 3px solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+header ul {
+    justify-self: flex-end;
+
+}
