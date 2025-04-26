@@ -1,12 +1,16 @@
 body, html {
     margin: 0;
     padding: 0;
+    background-color: #669965 ;
+    display: flex;
+    flex-direction: column;
 }
 
 :root {
-    --green: #447843;
+    --green: #448843;
     --gold: #E6C234;
     --gray: #B0B2B2;
+    --light-green: #669965;
 }
 
 header {
@@ -17,8 +21,56 @@ header {
     top: 0;
     width: 100%;
     display: flex;
+    align-items: center;
+}
+header #logo {
+    height: 65px;
+    width: auto;
+    margin-left: 15px;
+}
+
+header h1 {
+    margin-left: 35px;
+    margin-right: 35px;
 }
 header ul {
-    justify-self: flex-end;
+    justify-self:  flex-end;
+}
+main {
+    margin-top: 90px;
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: center;
+}
+main table {
+    border: var(--gold) 3px solid;
+    width: 80%;
+    height: 500px;
+    background-color: var(--green);
+}
+table * {
+    border: 1px solid var(--gold);
+}
+#grade {
+    width: 100%;
+}
+tr td  {
+    text-align: center;
+}
+tfoot td {
+    text-align: left;
+}
 
+footer {
+    background-color: var(--green);
+    border-top: var(--gold) 3px solid;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+    margin-top: 60px;
+    flex-flow: column nowrap;
 }
