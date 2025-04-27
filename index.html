@@ -3,6 +3,11 @@
     <head>
         <title>GibbonsGpaCalculator</title>
         <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
         <script src="resources/js/tableHandler.js" type="module" defer></script>
         <script src="resources/js/updateTable.js"  type="module" defer ></script>
         <script src="resources/js/calculateGPA.js" type="module" defer></script>
@@ -11,16 +16,20 @@
 
         <header>
             <img id="logo" src = "https://assets.scorebooklive.com/uploads/production/school/1951/image/20191215045129_462_mascotOrig.png" alt="Gibbons Logo">
-            <h1 id="title">Cardinal Gibbons GPA Calculator *Unofficial*</h1>
-            <nav>
+            <h1 id="title">Cardinal Gibbons GPA Calculator *UNOFFICIAL*</h1>
+            <!--<nav>
                 <ul>
                     <li>GPA Calculator</li>
                     <li>Exam Calculator</li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
 
         <main>
+            <div class="banner">
+                <h2>Semester GPA Calculator: </h2>
+            </div>
+
             <table id="gpaCalculator">
                 <thead>
                 <tr>
@@ -35,8 +44,8 @@
                 </tbody>
                 <tfoot id="gpaTFoot">
                     <tr>
-                        <td style="background-color: #669965" id = "weightedGPA">Weighted Gpa:</td>
-                        <td style="background-color: #669965" id="unweightedGPA">Unweighted Gpa:</td>
+                        <td style="background-color: #669965" id = "weightedGPA">Weighted GPA:</td>
+                        <td style="background-color: #669965" id="unweightedGPA">Unweighted GPA:</td>
                         <td colspan="2"><button id="grade">Get GPA:</button></td>
                     </tr>
                 </tfoot>
