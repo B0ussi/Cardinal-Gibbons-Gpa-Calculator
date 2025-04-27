@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #669965 ;
+    background-color: #FFFFFF ;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -40,7 +40,7 @@ header ul {
 }
 main {
     margin-top: 90px;
-    background-color: var(--light-green);
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     flex: 1;
@@ -50,6 +50,7 @@ main table {
     width: 80%;
     height: 500px;
     background-color: var(--green);
+    box-shadow: 7px 12px 8px var(--gray);
 }
 table * {
     border: 1px solid var(--gold);
@@ -76,4 +77,11 @@ footer {
     height:120px;
     flex-flow: column nowrap;
     line-height: 1px;
+}
+button {
+    background-color: var(--green);
+}
+button:hover {
+    transition: all 120ms ease-in;
+    background-color: var(--light-green);
 }
