@@ -6,6 +6,10 @@ body, html {
     flex-direction: column;
     height: 100%;
     min-height: 100vh;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 18px;
+    color: white;
+
 }
 
 :root {
@@ -39,32 +43,45 @@ header ul {
     justify-self:  flex-end;
 }
 main {
-    margin-top: 90px;
     background-color: #FFFFFF;
     display: flex;
-    justify-content: center;
-    flex: 1;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    flex-flow: column wrap;
+    flex-grow: 1;
 }
 main table {
+    padding: 0;
     border: var(--gold) 3px solid;
     width: 80%;
     height: 500px;
     background-color: var(--green);
     box-shadow: 7px 12px 8px var(--gray);
+    border-collapse: collapse;
+    margin: 15px auto;
 }
-table * {
+td, th {
     border: 1px solid var(--gold);
+
+}
+td {
+    height: 55px;
+}
+th {
+    height: 35px;
 }
 #grade {
     width: 100%;
 }
-tr td  {
+tr  {
     text-align: center;
 }
 tfoot td {
     text-align: left;
 }
-
 footer {
     background-color: var(--green);
     border-top: var(--gold) 3px solid;
@@ -74,14 +91,36 @@ footer {
     justify-content: center;
     text-align: center;
     bottom: 0;
-    height:120px;
+    height:140px;
     flex-flow: column nowrap;
     line-height: 1px;
 }
 button {
     background-color: var(--green);
+    height: 100%;
 }
 button:hover {
     transition: all 120ms ease-in;
     background-color: var(--light-green);
+}
+input {
+    border: none;
+}
+.banner {
+    height: 75px;
+    border-top: var(--gold) 3px solid;
+    border-bottom: var(--gold) 3px solid;
+    margin: 90px 0 20px 0;
+    text-align: center;
+    background-color: var(--green);
+    padding: 0;
+    box-shadow: 0 7px 5px var(--gray);
+}
+h1, h2 {
+    text-shadow:
+        2px 2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black,
+        -2px -2px 0 black;
+
 }
