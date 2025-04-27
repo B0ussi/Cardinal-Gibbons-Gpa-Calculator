@@ -32,7 +32,7 @@ button.onclick = function(){
 
     const weightedGPA = tot/grades.length;
     const weightedGPATD = document.getElementById('weightedGPA');
-    weightedGPATD.innerText = "Weighted GPA: "+Math.round(weightedGPA*100)/100;
+    weightedGPATD.innerText = "Weighted GPA: "+Math.round(weightedGPA*1000)/1000;
 
     const unweightedGPA = unweightedGrades.reduce((a, b) => a + b)/unweightedGrades.length;
     const unweightedGPATD = document.getElementById('unweightedGPA');
