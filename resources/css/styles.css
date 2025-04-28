@@ -128,7 +128,7 @@ h1, h2 {
 h2 {
     padding: 6px;
 }
-@media only screen and (max-width: 1400px), only screen and (orientation: portrait) {
+@media only screen and (max-width: 900px), only screen and (orientation: portrait) {
 
     main table {
         width: 100%;
