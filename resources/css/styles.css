@@ -124,3 +124,16 @@ h1, h2 {
         -2px -2px 0 black;
 
 }
+@media only screen and (max-width: 800px) or (orientation: portrait) {
+    main table {
+        width: 100%;
+        box-shadow: 0 12px 8px var(--gray);
+        border-right: none;
+        border-left: 0;
+    }
+}
+@media only screen and (max-width: 700px){
+    body,html{
+        font-size: 14px;
+    }
+}
