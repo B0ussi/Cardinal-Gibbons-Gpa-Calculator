@@ -20,7 +20,7 @@ body, html {
 }
 
 header {
-    height: 75px;
+    min-height: 75px;
     background-color: var(--green);
     border-bottom: var(--gold) 3px solid;
     position: fixed;
@@ -38,6 +38,7 @@ header #logo {
 header h1 {
     margin-left: 35px;
     margin-right: 35px;
+    padding: 6px;
 }
 header ul {
     justify-self:  flex-end;
@@ -46,7 +47,7 @@ main {
     background-color: #FFFFFF;
     display: flex;
     justify-content: flex-start;
-    margin: 0;
+    margin-top: 35px;
     padding: 0;
     top: 0;
     width: 100%;
@@ -123,6 +124,9 @@ h1, h2 {
         2px -2px 0 black,
         -2px -2px 0 black;
 
+}
+h2 {
+    padding: 6px;
 }
 @media only screen and (max-width: 1400px), only screen and (orientation: portrait) {
 
