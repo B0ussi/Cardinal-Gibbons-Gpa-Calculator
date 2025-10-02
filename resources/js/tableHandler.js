@@ -28,7 +28,7 @@ function classSelector(i){
     dropDown.setAttribute('type', 'text')
     dropDown.style.width = "98%";
     dropDown.style.height = "97%";
-    dropDown.style.backgroundColor = "#669965";
+    dropDown.style.backgroundColor = "#2a2c30";
     dropDown.setAttribute('placeholder', `Period: ${i+1}`);
     dropDown.className ='CLASS';
 
@@ -39,7 +39,7 @@ function gradeSelector(){
     select.setAttribute('name', 'grade');
     select.style.width = "98%";
     select.style.height = "97%";
-    select.style.backgroundColor = "#669965";
+    select.style.backgroundColor = "#2a2c30";
     select.className = 'grade';
     for (let letter of options) {
         for (let char of additions) {
@@ -67,7 +67,7 @@ function typeSelector(){
     const select = document.createElement('select');
     select.setAttribute('name', 'type');
     select.style.width = "98%";
-    select.style.backgroundColor = "#669965";
+    select.style.backgroundColor = "#2a2c30";
     select.style.height = "97%";
     select.className = "typeSelector";
     for (let type of types) {
@@ -80,7 +80,7 @@ function typeSelector(){
 }
 
 function tdBaser(td){
-    td.style.backgroundColor = "#669965";
+    td.style.backgroundColor = "#2a2c30";
     td.className = "gpaSection";
     td.innerText = "Blank";
     return td;
