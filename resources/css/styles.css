@@ -1,8 +1,8 @@
-/* Base Reset & Theme */
+
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #1e1f22;  /* dark gray background */
+    background-color: #1e1f22;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -12,22 +12,26 @@ body, html {
 }
 
 :root {
-    --gold: #f9a825;        /* softer gold */
-    --gray: #e0e0e0;        /* lighter gray */
-}
+    --gold: #f9a825;
+    --gray: #e0e0e0;
+    --green: #28a745;
+    --warning-red: #e74c3c;
 
+}
+#title {
+    font-weight: 900;
+}
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 600; /* adjust for thickness */
+    font-weight: 600;
 }
 
 
 header {
     height: 75px;
-    /*background-color: var(--green);*/
-    background-color: #2a2c30;  /* slightly lighter gray */
+    background-color: #2a2c30;
     border-bottom: 4px solid var(--gold);
     position: fixed;
     top: 0;
@@ -67,7 +71,7 @@ header ul li:hover {
 /* Main Content */
 main {
     flex: 1;
-    padding: 120px 20px 40px 20px; /* push below fixed header */
+    padding: 120px 20px 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +82,7 @@ main table {
     max-width: 900px;
     border-radius: 16px;
     overflow: hidden;
-    background-color: #2a2c30;  /* dark but not black */
+    background-color: #2a2c30;
     color: #f5f5f5;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     border-collapse: collapse;
@@ -124,12 +128,13 @@ button:hover {
 /* Banner */
 .banner {
     margin-bottom: 20px;
+    margin-top: 20px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--gold);  /* Discord/ChatGPT style gray */
+    background-color: var(--gold);
     color: #2a2c30;
     font-weight: 600;
     border-radius: 8px;
@@ -140,10 +145,12 @@ button:hover {
 
 
 }
-
+ul, ol, td {
+    line-height: 35px;
+}
 /* Footer */
 footer {
-    background-color: #2a2c30;  /* slightly lighter gray */
+    background-color: #2a2c30;
     border-top: 4px solid var(--gold);
     padding: 20px;
     text-align: center;
@@ -154,6 +161,37 @@ a {
     color: var(--gold);
     transition: color 0.2s ease-in;
     text-decoration: underline;
+}
+.logBanner {
+    background-color: var(--green);
+}
+.helpTable {
+    margin: 10px;
+}
+.termsTable {
+    background-color: var(--warning-red);
+}
+#home {
+    margin: 20px;
+    height: 50px;
+    width: 1000px;
+    background-color: var(--green);
+    color: #e0e0e0;
+}
+#home:hover {
+    background-color: forestgreen;
+    transform: translateY(-1px);
+}
+#helpMe{
+    margin: 20px;
+    height: 40px;
+    width: 350px;
+    background-color: var(--green);
+    color: #e0e0e0;
+}
+#helpMe:hover {
+    background-color: forestgreen;
+    transform: translateY(-1px);
 }
 /* Responsive */
 @media (max-width: 700px) {
